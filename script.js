@@ -64,9 +64,11 @@ const menutoggle = document.querySelector('.menuToggle');
 
 
   window.onload = function() {
-    mainContainers[0].classList.add('trigger');
+    if(window.scrollY === 0){
+      mainContainers[0].classList.add('trigger');
   pageContainers[0].classList.add('trigger');
   list[0].classList.add('active');
+    }
   };
 
   
