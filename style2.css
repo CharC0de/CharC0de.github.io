@@ -29,7 +29,8 @@
   background: rgba(255,255,255,0);
 }
 .HeaderContainer {
-    background-color: gray;
+    background-color: #202124;
+    border-bottom: #a2a2a2 1px solid;
     /*background-image: url('img/background.gif');*/
     display:flex;
     flex-wrap:wrap;
@@ -210,5 +211,23 @@ body .detectionContainer div.trigger.open
     }
     100% {
       border-color: #32E2F1;
+    }
+  }
+
+  @keyframes font-animation {
+    0% {
+      color: #32E2F1;
+    }
+    25% {
+      color: #FFE80F;
+    }
+    50% {
+      color: #8C12FB;
+    }
+    75% {
+      color: #FF0080;
+    }
+    100% {
+      color: #32E2F1;
     }
   }
