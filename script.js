@@ -68,17 +68,7 @@ const menutoggle = document.querySelector('.menuToggle');
   pageContainers[0].classList.add('trigger');
   list[0].classList.add('active');
   };
-  function natural()
-  {
 
-  }
-function removeOverlay() {
-    var overlay = document.querySelector('.overlay');
-    overlay.style.top = '100%';
-    setTimeout(function() {
-      overlay.parentNode.removeChild(overlay);
-    }, 500);
-  }
   
   menutoggle.onclick = function name() {
     navigation.classList.toggle('open')
