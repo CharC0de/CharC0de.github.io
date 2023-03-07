@@ -1,0 +1,735 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+ion-icon{
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+hr{
+ border: rgb(72, 72, 72)solid 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 5px; 
+}
+.borderStyle{
+  border:  rgb(24,25,26) 1px;
+}
+
+i{
+  margin: 5px;
+}
+
+body{
+  background-color: rgb(24,25,26);
+}
+
+header{
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  overflow: hidden; 
+  background-color: rgb(36,37,38);
+  color: white;
+}
+#logo{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+#search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#search input{
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  background-color: rgb(58,59,60);
+  color: white;
+  text-align: left;
+}
+#search div{
+  font-size: 30px;
+}
+#centerNav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#centerNav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#centerNav ul li{
+  min-width: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#centerNav ul li i{
+  font-size: 30px;
+}
+#centerNav ul li :hover{
+  color: blue;
+}
+#settings{
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#settings ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#settings ul li{
+  min-width: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+#settings ul li i{
+  font-size: 30px;
+}
+#settings ul li .pfp{
+  margin-right: 5px;
+}
+#settings ul li :hover{
+  color: blue;
+}
+.phoneOnly {
+  display: none;
+}
+.pfp{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.FbContent{
+  background: rgb(36,37,38);
+  border-radius: 15px;
+  color: white;
+  border: rgba(255, 255, 255, 1);
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contentBody{
+  margin-top: 10vh;
+}
+
+main #sideBarLeft {
+  width: 20%;
+  height: 1000px;
+  position: fixed;
+  left: 0;
+  background-color:rgb(24,25,26);
+  color: white;
+  overflow: auto;
+  padding: 10px;
+}
+
+main #sideBarLeft ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+main #sideBarLeft ul li .pfp{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+main #sideBarLeft ul li i{
+  font-size: 30px;
+  margin: 10px;
+  color: blue;
+}
+
+main #sideBarLeft footer {
+  width: 80%;
+  margin: 10px;
+}
+
+main #sideBarLeft footer p{
+  color: rgb(90,90,90);
+  font-size: 12px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+#mainContent {
+  max-width: 60%;
+  height: 2700px;
+  overflow: hidden;
+ 
+}
+
+#mainContent #myDay{
+  display: flex;
+  flex-direction: column;
+}
+#mainContent #myDay #myDayNav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+#mainContent #myDay #myDayNav .myDayItem{
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#mainContent #myDay #myDayNav .myDayItem i{
+  margin-right: 10px;
+}
+
+#mainContent #myDay #myDayContent{
+  width: 500%;
+  display: flex;
+}
+#mainContent #myDay #myDayContent ul{
+  width: 100%;
+  height: 210px;
+  flex-direction: row;
+  
+}
+#mainContent #myDay #myDayContent ul li{
+  width: 100px;
+  height: 200px;
+  border: white 1px solid;
+  border-radius: 15px;
+  list-style: none;
+  margin: 2.5px;
+  display: inline-block;
+  overflow: hidden;
+}
+#mainContent #myDay #myDayContent ul li #myDayPost{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#mainContent #myDay #myDayContent ul li .myDayUser{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#mainContent #myDay #myDayContent ul li .myDayUser img{
+  margin: 5px;
+
+}
+
+#mainContent #myDay #myDayContent ul li .myDayUser p{
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#mainContent #myDay #myDayContent ul li #myDayPost img{
+  width: 100%;
+  height: 100;
+}
+#mainContent #myDay #myDayContent ul li #myDayPost p{
+  padding: 5px;
+  text-align: center;
+}
+
+
+#mainContent  #createPost #mainPost{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+#mainContent  #createPost {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainContent #createPost #mainPost  .pfp{
+  margin: 10px;
+  width: 55px;
+  height: 50px;
+}
+
+#mainContent #createPost #mainPost input{
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(58,59,60);
+  color: white;
+  text-align: left;
+}
+
+#mainContent #createPost #postNav{
+  display: flex;
+}
+
+#mainContent #createPost #postNav .postItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2.5px;
+  font-size: 18px;
+}
+
+#mainContent .FBpost{
+  display: flex;
+  flex-direction: column;
+}
+
+#mainContent .FBpost .userPoster{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#mainContent .FBpost .userPoster img{
+margin: 5px;
+}
+
+#mainContent .FBpost .reactions{
+  display: flex;
+  align-items: center;
+}
+
+#mainContent .FBpost .reactions i{
+  margin: 5px;
+}
+
+#mainContent .FBpost .userPostNav{
+  display: flex;
+  flex-direction: column;
+}
+
+#mainContent .FBpost .userPostNav ul{
+  display: flex;
+}
+
+#mainContent .FBpost .userPostNav li{
+  display: flex;
+  width: 33.33%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#mainContent .FBpost #imageTextPostMain {
+  display: flex;
+  height: 300px;
+  background-color: skyblue;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainContent .FBpost #sharedPostMain {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  border: 1px gray solid;
+  border-radius: 15px;
+}
+#mainContent .FBpost #sharedPostMain #sharedPoster {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+}
+#mainContent .FBpost #sharedPostMain #sharedPoster .pfp{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 100px;
+}
+#mainContent .FBpost #sharedPostMain img{
+  display: flex;
+  flex-direction: row;
+  height:75%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#mainContent .FBpost #imagePostMain img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#mainContent .FBpost #imageTextPostMain h1{
+  font-size: 50px;
+}
+
+#mainContent .FBpost .userComment{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#mainContent .FBpost .userComment input{
+  width: 100%;
+  background-color: rgb(58,59,60);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+
+#mainContent .FBpost .firstComment{
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+#mainContent .FBpost .firstComment .pfp{
+  margin-top: 5px;
+}
+#mainContent .FBpost .firstComment .commentMain{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 100%;
+}
+
+#mainContent .FBpost .firstComment .commentMain .commentBox{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: rgb(58,59,60);
+  border-radius: 15px;
+}
+
+#mainContent .FBpost .firstComment .commentMain .outBoxNav{
+  display: flex;
+  flex-direction: row;
+}
+
+#mainContent .FBpost .firstComment .commentMain .commentSelection{
+  min-width: 50px;
+}
+
+
+
+
+
+
+
+
+
+main #sideBarRight {
+  width: 20%;
+  height: 90%;
+  background-color: rgb(24,25,26);
+  position: fixed;
+  right: 0;
+  overflow: auto;
+  color: white;
+}
+
+main #sideBarRight #fRequestHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+main #sideBarRight #fRequestHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+main #sideBarRight #fRequestMain {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+main #sideBarRight #fRequestMain .pfp{
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+main #sideBarRight #fRequestMain #fRequestContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+main #sideBarRight #fRequestMain #fRequestContent #fRequestChoice{
+  display: flex;
+}
+main #sideBarRight #fRequestMain #fRequestContent input{
+  width: 100px;
+  background-color: rgb(58,59,60);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 2.5px;
+}
+
+main #sideBarRight #fRequestMain #fRequestContent #Confirm{
+  background-color: blue;
+}
+main #sideBarRight #birthdayContent{
+  display: flex;
+}
+main #sideBarRight h3{
+  margin: 5px;
+}
+main #sideBarRight #birthdayContent span{
+  font-weight: 600;
+}
+
+main #sideBarRight #contactHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main #sideBarRight #contactHeader ul{
+  display: flex;
+  flex-direction: row;
+}
+main #sideBarRight #contactMain{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+main #sideBarRight #contactMain ul{
+  display: flex;
+  flex-direction: column;
+}
+main #sideBarRight #contactMain ul li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+main #sideBarRight #contactMain ul li .pfp{
+  margin-right: 10px;
+}
+
+main #sideBarRight #groups{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+main #sideBarRight #groups ul{
+  display: flex;
+  flex-direction: column;
+}
+
+main #sideBarRight #groups ul li{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+main #sideBarRight #groups ul li .logo{
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+
+@media screen and (max-width: 1210px) {
+  .FbContent {
+    margin-right: 150px;
+    margin-left: 100px;
+  }
+  #centerNav ul li{
+    min-width: 100px;
+
+  }
+
+}
+@media screen and (max-width: 1090px) {
+  #centerNav ul li{
+    display: flex;
+
+  }
+  .phoneOnly {
+    display: flex;
+  }
+  #centerNav ul .phoneOnly{
+    display: flex;
+    min-width: 50px;
+
+  }
+  #sideBarLeft{
+   display: none;
+  }
+  #sideBarRight{
+    min-width: 250px;
+  }
+  #mainContent{
+    min-width: 70%;
+  }
+  .FbContent {
+    margin-left: 0px;
+  }
+  #settings ul .wideScreenOnly{
+    display: none;
+  }
+  .wideScreenOnly{
+    display: none;
+    overflow: visible;
+  }
+  #centerNav ul .phoneOnly{
+    display: flex;
+    min-width: 50px;
+
+  }
+  
+}
+
+@media only screen and (max-width: 940px){
+  #centerNav ul li{
+    display: none;
+  }
+  #search{
+    width: 50%;
+  }
+  #settings{
+    width: 50%;
+  }
+  .FbContent {
+    margin-right: 150px;
+    margin-left: 0px;
+  }
+  
+  #mainContent{
+    min-width:80%;
+    transform: translateX(-10%);
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .wideScreenOnly{
+    display: none;
+    overflow: visible;
+  }
+ #sideBarRight{
+    display: none;
+    overflow: visible;
+  }
+#sideBarLeft {
+    display: none;
+    width: 0;
+  }
+  #centerNav ul li{
+    display: none;
+  }
+  #centerNav ul .phoneOnly{
+    display: flex;
+    min-width: 30px;
+
+  }
+  #search{
+    margin-right: 0;
+  }
+  #search div{
+    margin-left: 15px;
+  }
+  #settings ul li{
+      display: flex;
+      min-width: 50px;
+  }
+  .phoneOnly {
+    display: flex;
+  }
+  #settings ul .wideScreenOnly{
+    display: none;
+  }
+  #mainContent{
+      max-width: 100%;
+      margin: 5px;
+      transform: translateX(0%);
+    }
+
+    .FBpost{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .FbContent{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    p{
+      font-size: 12px;
+    }
+}

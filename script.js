@@ -1,5 +1,5 @@
  const track = document.getElementById("image-track");
-
+  keyframeValue = "Invalid keyframe value for property transform: translate(NaN%, -50%)";
 window.onmousedown = e =>{
    track.dataset.mouseDownAt = e.clientX;
 }
@@ -150,3 +150,4 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
     smoothScroll(elemId);
   });
 });
+
